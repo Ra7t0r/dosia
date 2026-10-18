@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>*{box-sizing:border-box}body{margin:0}</style>
+<title>Dosia Support & Privacy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;800&family=Nunito+Sans:wght@400;600&display=swap">
+<style>
+/* Layout: single readable column; short support block first, full privacy policy below. */
+:root{
+  --bg:#f5f8fb; --surface:#ffffff; --fg:#17212b; --muted:#5a6876; --line:#dde5ee;
+  --accent:#2f86d6; --accent-soft:#e3f0fb;
+  --display:"Nunito",ui-rounded,system-ui,sans-serif;
+  --body:"Nunito Sans",system-ui,-apple-system,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f151b; --surface:#17202a; --fg:#e8eef4; --muted:#9aa9b8; --line:#26323f;
+  --accent:#5aaaf0; --accent-soft:#1a2c3e; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f151b; --surface:#17202a; --fg:#e8eef4; --muted:#9aa9b8; --line:#26323f;
+  --accent:#5aaaf0; --accent-soft:#1a2c3e; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.6}
+.wrap{max-width:680px;margin:0 auto;padding-block:40px 64px;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  display:flex;flex-direction:column;gap:40px}
+header{display:flex;align-items:center;gap:14px}
+.mark{width:52px;height:52px;border-radius:14px;background:var(--accent);display:grid;place-items:center;flex:none}
+.mark svg{width:26px;height:26px}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;line-height:1.2}
+h1{font-size:1.75rem;font-weight:800}
+.sub{color:var(--muted);margin:2px 0 0;font-size:.95rem}
+nav{display:flex;gap:8px;flex-wrap:wrap}
+nav a{font-family:var(--display);font-weight:600;font-size:.9rem;color:var(--accent);background:var(--accent-soft);
+  padding:6px 14px;border-radius:999px;text-decoration:none}
+nav a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+section{display:flex;flex-direction:column;gap:14px}
+h2{font-size:1.35rem;font-weight:800}
+h3{font-size:1.05rem;font-weight:800;margin-top:10px}
+p,ul{margin:0;max-width:65ch}
+ul{padding-left:1.2em;display:flex;flex-direction:column;gap:6px}
+.muted{color:var(--muted)}
+.contact{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px 20px;
+  display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px}
+.contact .label{font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.contact .email{font-family:var(--display);font-weight:800;font-size:1.15rem;user-select:all;word-break:break-all}
+button{font:600 .9rem var(--display);color:#fff;background:var(--accent);border:0;border-radius:10px;padding:9px 16px;cursor:pointer}
+dl{margin:0;display:grid;grid-template-columns:minmax(0,1fr);gap:12px}
+dt{font-weight:600}
+dd{margin:0;color:var(--muted)}
+hr{border:0;border-top:1px solid var(--line);margin:0}
+footer{color:var(--muted);font-size:.85rem}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="mark" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M12 3c3.5 4.2 6 7.6 6 10.6A6 6 0 0 1 6 13.6C6 10.6 8.5 7.2 12 3Z" fill="#fff"/></svg>
+    </div>
+    <div>
+      <h1>Dosia</h1>
+      <p class="sub">Water &amp; Medication Tracker for iPhone</p>
+    </div>
+  </header>
+
+  <nav aria-label="Sections"><a href="#support">Support</a><a href="#privacy">Privacy Policy</a></nav>
+
+  <section id="support">
+    <h2>Support</h2>
+    <p>Questions, ideas, or something not working as expected? Send an email and you will get a reply, usually within a few days.</p>
+    <div class="contact">
+      <div>
+        <div class="label">Email</div>
+        <div class="email" id="email">panos.ips@gmail.com</div>
+      </div>
+      <button type="button" id="copy">Copy address</button>
+    </div>
+    <p class="muted">Tip: in the app, open <strong>Settings → Contact us</strong>. The email it creates already includes your app version and iOS version, which helps solve problems faster.</p>
+
+    <h3>Common questions</h3>
+    <dl>
+      <div><dt>My reminders don't arrive.</dt>
+        <dd>Check that notifications are allowed for Dosia in iPhone Settings → Notifications → Dosia, and that Focus modes are not silencing them.</dd></div>
+      <div><dt>The widget shows old numbers.</dt>
+        <dd>Open Dosia once so the widget refreshes. If it still looks wrong, remove the widget and add it again.</dd></div>
+      <div><dt>Will I lose my data if I delete the app?</dt>
+        <dd>Yes. Your data is stored only on your iPhone, so deleting Dosia deletes it. It may be restored from an iPhone backup made before you deleted the app.</dd></div>
+    </dl>
+  </section>
+
+  <hr>
+
+  <section id="privacy">
+    <h2>Privacy Policy</h2>
+    <p class="muted">Last updated: 18 October 2026</p>
+    <p>Dosia is built so that your health information stays with you. This policy explains what the app stores and what it doesn't do.</p>
+
+    <h3>What Dosia stores</h3>
+    <ul>
+      <li>The profile details you enter: name, avatar, weight, height and activity level, used to calculate your daily water goal.</li>
+      <li>Your water intake entries.</li>
+      <li>Your medications, their schedules and the doses you log.</li>
+      <li>Your app settings, such as reminders and appearance.</li>
+    </ul>
+    <p>All of this is stored <strong>only on your device</strong>. It is shared between the app and its widgets on the same iPhone so the widgets can show your progress.</p>
+
+    <h3>What Dosia does not do</h3>
+    <ul>
+      <li>It does not send your data to any server. The app has no account and no sign-in.</li>
+      <li>It does not use analytics, advertising or tracking tools.</li>
+      <li>It does not sell or share your data with anyone.</li>
+      <li>It does not read from or write to Apple Health.</li>
+    </ul>
+
+    <h3>Notifications</h3>
+    <p>Reminders are scheduled locally on your iPhone. You can turn them off in the app or in iPhone Settings at any time.</p>
+
+    <h3>Backups</h3>
+    <p>If you use iCloud Backup or back up your iPhone to a computer, Apple may include Dosia's data in that backup, as with any app. This is handled by Apple under Apple's privacy policy; the developer has no access to it.</p>
+
+    <h3>Contacting the developer</h3>
+    <p>If you email for support, your email address and message are used only to reply to you and are not shared.</p>
+
+    <h3>Deleting your data</h3>
+    <p>Delete the Dosia app from your iPhone to remove all of its data from the device.</p>
+
+    <h3>Children</h3>
+    <p>Dosia is not directed at children and does not knowingly collect information from anyone.</p>
+
+    <h3>Changes</h3>
+    <p>If this policy changes, the updated version will be posted on this page with a new date.</p>
+
+    <h3>Contact</h3>
+    <p>Panagiotis Athanasiou, Greece · <span style="user-select:all">panos.ips@gmail.com</span></p>
+  </section>
+
+  <footer>© 2026 Dosia</footer>
+</div>
+
+<script>
+document.getElementById('copy').addEventListener('click', function(){
+  var b=this, t=document.getElementById('email').textContent;
+  function done(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy address'},1600)}
+  function fallback(){var r=document.createRange();r.selectNodeContents(document.getElementById('email'));var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Selected, press Copy'}
+  try{navigator.clipboard.writeText(t).then(done,fallback)}catch(e){fallback()}
+});
+</script>
+</body>
+</html>
